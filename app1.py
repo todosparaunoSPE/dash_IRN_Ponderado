@@ -9,7 +9,7 @@ Created on Fri Dec  8 12:11:41 2023
 import requests  # pip install requests
 import streamlit as st  # pip install streamlit
 import streamlit.components.v1 as components
-from streamlit_lottie import st_lottie  # pip install streamlit-lottie
+#from streamlit_lottie import st_lottie  # pip install streamlit-lottie
 
 import streamlit.web.cli 
 
