@@ -4,7 +4,7 @@ Created on Fri Dec  8 12:11:41 2023
 
 @author: jperezr
 """
-import json
+#import json
 
 import requests  # pip install requests
 import streamlit as st  # pip install streamlit
@@ -13,26 +13,26 @@ from streamlit_lottie import st_lottie  # pip install streamlit-lottie
 
 import streamlit.web.cli 
 
-def load_lottieurl(url: str):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
+#def load_lottieurl(url: str):
+#    r = requests.get(url)
+#    if r.status_code != 200:
+#        return None
+#    return r.json()
 
 
 
-#lottie_hello = load_lottieurl("https://lottie.host/6f4ee854-3625-4849-8985-e423a0752949/hZWZsrb0zk.json")
+##lottie_hello = load_lottieurl("https://lottie.host/6f4ee854-3625-4849-8985-e423a0752949/hZWZsrb0zk.json")
    
-lottie_hello = load_lottieurl("https://lottie.host/f270a53f-1258-4846-9dd8-302fb8501c92/lxcu0ETdKd.json")
+#lottie_hello = load_lottieurl("https://lottie.host/f270a53f-1258-4846-9dd8-302fb8501c92/lxcu0ETdKd.json")
 
-#lottie_hello = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_UJNc2t.json")
+##lottie_hello = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_UJNc2t.json")
 
 
 
 #st.title("Subdirección de Planeación Estratégica")
 
 
-st_lottie(lottie_hello, key = "hello")
+#st_lottie(lottie_hello, key = "hello")
 
 #st.subheader("Tablas y grágicos")
 
