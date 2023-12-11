@@ -41,10 +41,6 @@ with st.sidebar:
 df1 = df.query('AFORE == @Afore_filter & SIEFORE == @Siefore_filter & Fecha == @Fecha_filter')
 
 total_IRN  = float(df1['IRN'].sum())
-formatted_string = "{:.2f}".format(total_IRN)
-float_value = float(formatted_string)
-total_IRN_1 = float_value
-
 
 total_Ranking = float(df1['Ranking'].sum())
 
@@ -54,7 +50,7 @@ total1,total2 = st.columns(2,gap='large')
 
 with total1:
     st.image('images/irn.png',use_column_width='Auto')
-    st.metric(label = 'Total IRN', value= numerize(total_IRN_1))
+    st.metric(label = 'Total IRN', value= numerize(total_IRN))
     
 with total2:
     st.image('images/posicion-ranking.png',use_column_width='Auto')
